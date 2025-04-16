@@ -1,0 +1,8 @@
+CREATE TABLE medicamentos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  cliente_id INT NOT NULL,
+  nome VARCHAR(100) NOT NULL,
+  data_inicio DATE NOT NULL,
+  dias_tratamento INT NOT NULL,
+  FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+);
